@@ -788,7 +788,8 @@ body {
   .optical-bg {
     margin-bottom: 30px; }
     .optical-bg img {
-      width: 50%; } }
+      width: 50%;
+      max-height: 147px; } }
 
 .category {
   display: none; }
