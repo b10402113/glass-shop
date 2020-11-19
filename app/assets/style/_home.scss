@@ -1,0 +1,719 @@
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    font-size: 24px;     
+    line-height: 28px;
+    
+    font-family: "Roboto", sans-serif, PingFangSC-Regular, sans-serif;
+    /* font-weight: 500; */
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* container 平板 */
+@media(max-width:992px){
+    .container{
+        padding: 0 40px;
+    }
+}
+
+/* container 手機 */
+@media(max-width:767px){
+    .container{
+        padding: 0 15px;
+    }
+}
+/* color */
+.dark-red{
+    color:#650300;
+}
+.black{
+    color: #000000;
+}
+.white{
+    color: #ffffff;
+}
+/* header */
+.header{
+    display: flex;  
+    background-color: #AA0601;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 88px;
+}
+
+.menu{
+    display: flex;
+}
+.menu a{
+    color:white;
+    margin-left: 64px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/* header 平板 */
+@media(max-width:992px){
+    .header{
+        padding: 40px 39px;
+    }
+}
+/* header 手機 */
+@media(max-width:767px){
+    .header{
+        display: block;
+        padding: 0;
+        padding-top: 10px;
+        
+    }
+    .logo{
+        padding-bottom: 11px;
+        border-bottom: 1px solid #fff;
+    }
+    .logo img{
+        display: block;
+        margin: 0 auto;
+    }
+    .menu{
+        flex-wrap: wrap;
+    }
+    .menu li{
+        width: 50%;
+        text-align: center;
+        border-bottom: 1px solid #ffffff;
+    }
+    .menu li:nth-child(odd){
+        border-right: 1px solid #ffffff;
+    }
+    .menu a{
+        margin: 0;
+        display: block;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+.banner{
+    height: 840px;
+    background: url('../images/home/banner.png') no-repeat center;
+    background-position: center center;
+    padding-top: 350px;
+    padding-right: 21.09%;
+    /* padding-bottom: 350px; */
+    text-align: right;
+    font-weight: bold;
+}
+.banner p{
+    line-height: 54px;
+    font-size: 36px;
+}
+.banner h1{
+    font-size: 64px;
+    line-height: 90px;
+}
+
+/* banner 平板 */
+@media(max-width:992px){
+    .banner{
+        padding-right: 39px;
+        padding-top: 372px;
+        /* height: 480px; */
+    }
+    
+}
+
+/* banner 手機 */
+@media(max-width:767px){
+    .banner{
+        background:url('../images/home/banner-sm.png') no-repeat;
+        background-position: left center;
+        height: 394px;
+        padding-top: 164px;
+        padding-right: 15px;
+        /* padding-bottom: 163px; */
+    }
+    .banner p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .banner h1{
+        font-size: 32px;
+        line-height: 45px;
+    }    
+}
+
+
+.intro{
+    background-color: #AA06010D;
+    padding-bottom: 80px;
+}
+.title{
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color:#650300;
+    padding-top: 64px;
+}
+
+.intro ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.intro li{
+    width: 18%;
+}
+
+.intro img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+
+}
+.intro h3{
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.intro p{
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* intro 平板 */
+@media(max-width:992px){
+    .intro ul{
+        flex-wrap: wrap;
+    }
+    .intro img{
+        margin-bottom: 16px;
+    }
+    .intro li{
+        width: 45%;
+        margin-bottom: 40px;
+    }
+    .title{
+        padding-top: 40px;
+        margin-bottom: 32px;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    
+}
+
+/* intro 手機 */
+@media(max-width:767px){
+    .intro .container{
+        padding: 0 70px;
+    }
+    .title{
+        padding-top: 32px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .intro{
+        padding-bottom: 12px;
+    }
+    .intro li{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .intro img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+
+.classic {
+    padding-bottom: 80px;
+}
+.classic li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.classic li:last-child{
+    margin-bottom: 0px;
+}
+
+.classic li .classic-type{
+    display: flex;
+    align-items: center;
+}
+.classic li .classic-type img{
+    margin-right: 8px;
+}
+.classic li:nth-child(odd) .product-img{
+    display: block;
+    margin-right: 30px;
+}
+
+.classic li:nth-child(even){
+    flex-direction: row-reverse;
+} 
+.classic li:nth-child(even) p{
+    margin-right: 30px;
+}
+.classic li p{
+    font-size: 48px;
+    line-height: 63px;
+    color:#AA0601;
+    font-weight: bold;
+    font-style: italic;
+}
+.classic li .product-img{
+    max-width: 635px;
+}
+.classic li .icon{
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+
+
+/* classic 平板 */
+@media(max-width:992px){
+    .classic {
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    .classic li:nth-child(even){
+        flex-direction: row;
+    } 
+    .classic li:nth-child(even) .product-img{
+        display: block;
+        margin-right: 30px;
+        margin-left: 0;
+    }
+    .classic li{
+        margin-bottom: 8px;
+    }
+    .classic li .product-img{
+        max-width: 390px;
+    }
+    .classic li p{
+        font-size: 28px;
+        line-height: 42px;
+    }
+}
+
+
+/* classic 手機 */
+@media(max-width:767px){
+    .classic li .product-img{
+        width: 100%;
+    }
+    .classic li .classic-type{
+        position: absolute;
+    }
+    .classic li p{
+        color:#fff;
+    }
+    .classic li:nth-child(even)  .product-img{
+        margin-right: 0;
+    }
+    .classic li:nth-child(odd)  .product-img{
+        margin-right: 0;
+    }
+    .classic li{
+        position: relative;
+        justify-content: center;
+    }
+
+
+    
+}
+
+
+.joint-glasses{
+    background: url('../images/home/bg.png') no-repeat center;
+    padding-bottom: 80px;
+}
+.joint-glasses .title{
+    color: #ffffff;
+}
+.joint-glasses ul{
+    display: flex;
+    justify-content: space-between;
+}
+.joint-glasses li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 49%;
+}
+
+.joint-glasses p{
+    font-size: 72px;
+    line-height: 95px;
+    font-weight: bold;
+    color:#AA0601;
+    position: absolute;
+}
+
+/* .joint-glasses 平板 */
+@media(max-width:992px){
+    .joint-glasses li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .joint-glasses p{
+        font-size: 32px;
+        line-height: 25px;
+    }
+
+}
+/* .joint-glasses 手機 */
+@media(max-width:767px){
+    .joint-glasses{
+        padding-bottom: 16px;
+    }
+    .joint-glasses ul{
+        flex-wrap: wrap;
+        
+    }
+    .joint-glasses li{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 16px;
+    }    
+}
+.recommendation{
+    padding-bottom: 64px;
+}
+.recommendation ul{ 
+    display: flex;
+    justify-content: space-between;
+}
+.recommendation li{
+    width: 24%;
+    border: 1px solid #DEE2E6;
+}
+
+.recommendation .content{
+    padding: 14px 16px 15px 16px;
+}
+.recommendation .content p:nth-child(1){
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.recommendation .content p:nth-child(2){
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.recommendation .content p:nth-child(3){
+    color:#707070;
+    font-size: 14px;
+    line-height: 21px;  
+}
+
+/* .recommendation 平板 */
+@media(max-width:992px){
+    .recommendation{
+        padding-bottom: 13px;
+    }
+    .recommendation ul{
+        flex-wrap: wrap;
+    }
+    .recommendation li{
+        width: 47%;
+        margin-bottom: 28px;
+    }
+    .recommendation img{
+        width: 100%;
+    }
+}
+/* recommendation 手機 */
+@media(max-width:767px){
+    .recommendation{
+        padding-bottom: 16px;
+    }
+    .recommendation li{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+}
+.contact{
+    background-color: #AA06010D;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+.wrap{
+    max-width: 730px;
+    margin: 0 auto;
+}
+.contact .title{
+    color: #000000;
+    margin-bottom: 24px;
+}
+.contact .description{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact ul li p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    font-weight: bold;
+
+}
+.contact ul li input{
+    display: block;
+    width: 100%;
+    border: 1px solid #000000;
+    background-color: #AA06010D;
+    padding: 14px 16px 14px 16px;
+    color: #000000;
+    font-weight: bold;
+    outline: none;
+}
+.contact ul{
+    margin-bottom: 42px;
+}
+
+.contact .square{
+    display: inline-block;
+    padding: 5px;
+    margin-right: 2px;
+    height:100%;
+    border:1px solid black;
+}
+
+.btn{
+    display: block;
+    border:none;
+    background-color: #AA0601;
+    padding: 16px 143px;
+    color:#ffffff;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* .contact 平板 */
+@media(max-width:992px){
+    .wrap{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .contact ul li p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .contact .description{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .btn{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+/* contact 手機 */
+@media(max-width:767px){
+    .wrap{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .contact ul{
+        margin-bottom: 24px;
+    }
+    .btn{
+        padding: 8px 54.5px;
+    }
+    .contact{
+        padding-bottom: 32px;
+    }
+}
+
+.footer{
+    background-color: #AA0601;
+    padding-top: 36px;
+    color: white;
+    padding-bottom: 29px;
+}
+.footer-top ul{
+    display: flex;
+    margin-bottom: 18px;    
+}
+.footer ul li{
+    display: flex;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links a{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    margin-right: 48px;
+}
+.media img{
+    width: 48px;
+    height: 48px;
+    margin-left: 32px;
+}
+.contact-info{
+    align-items: center;
+    margin-bottom: 17px;
+}
+.contact-info img{
+    margin-right: 17px;
+}
+.email{
+    margin-bottom: 22px;
+}
+
+.footer-bottom{
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid #ffff;
+}
+.footer-bottom .copyright-left{
+    display: flex;
+    align-items: center;
+}
+.footer-bottom .copyright-left img{
+    margin-right: 38px;
+}
+
+.footer-bottom .copyright-right{
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom .copyright-right p{
+    margin-left: 62px;
+}
+
+
+/* .footer 平板 */
+@media(max-width:992px){
+    .media img{
+        /* margin-right: 24px; */
+        max-width: 24px;
+        margin-left: 24px;
+    }
+    .links {
+        margin-bottom: 22px;
+    }
+    .links a{
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+        margin-right: 40px;
+    }
+    .contact-info{
+        margin-bottom: 8px;
+    }
+    .contact-info img{
+        max-width: 24px;
+        margin-right: 12px;
+    }
+    .contact-info p{
+        font-size: 20px;
+    }
+
+
+    .footer-bottom img{
+        display: none;
+    }
+    .footer-bottom {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .footer-bottom .copyright-right p{
+        margin-left: 24px;
+    }
+
+}
+
+/* footer 手機 */
+@media(max-width:767px){
+    .footer{
+        padding-bottom: 25px;
+    }
+    .footer-top{
+        display: block;
+        float: right;
+        border:none;
+    }
+    .footer-top img{
+        width: 24px;
+        height: 24px;
+    }
+    .footer-top .links {
+        display: none;
+    }
+    .contact-info p{
+        font-size: 16px;
+    }
+    .contact-info img{
+        width: 20px;
+        height: 20px;
+    }
+    .email{
+        margin-bottom: 24px;
+    }
+    .footer-bottom{
+        padding-top: 18px;
+        position: relative;
+    }
+    .footer-bottom {
+        display: block !important;
+    }
+    .footer-bottom  .copyright-right{
+        display: block;
+    }
+    .footer-bottom  .copyright-right p{
+        margin-left: 0;
+        margin-top: 8px;
+    }
+    .copyright-left img{
+        width: 46px;
+        display: block;
+        right:  0;
+        bottom: 0;
+        position: absolute;
+
+    }
+
+}

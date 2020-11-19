@@ -1,0 +1,140 @@
+
+.choosse-location{
+    padding-top: 20px;
+    margin-bottom: 32px;
+    p{
+        font-size:18px ;
+        font-weight: bold;
+    }
+    select{
+        margin-left: 20px;
+        height: 45px;
+        width: 324px;
+        outline:none;
+        border: none;
+        border: 1px solid #CED4DA;
+        padding: 10px 19px;
+    }
+
+    option{
+        font-size: 18px;
+        line-height: 24px;
+        border: 1px solid #cccccc;
+    }
+}
+@media (max-width:992px){
+    .choosse-location{
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width:767px){
+    .choose{
+        justify-content: space-between;
+        p{
+            width: 15%;
+            font-size: 14px;
+        }   
+        select{
+            width: 100%;
+        }
+    }
+
+}
+
+// 為了補最後一個
+.location:after {
+    content: "";
+    width: 32%;
+}
+.location{
+    margin-bottom: 272px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .location-item{
+        width: 32%;
+        margin-bottom: 32px;
+    }
+
+    .location-title{
+        padding: 12px 0px 12px 24px;
+        border: 1px solid #00000020;
+    }
+    h3{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .location-content{
+        padding: 16px 29px 16px 24px;
+        border: 1px solid #00000020;
+        li{
+            display: flex;
+            align-items: center;
+            img{
+                width: 21px;
+                height: 21px;
+                margin-right: 12px;
+            }
+            p{
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+        }
+    }
+    .location-button{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #000000;
+        a{
+            display: block;
+            text-align: center;
+            color:#ffffff;
+        }
+    }
+}
+
+@media (max-width:992px){
+    .location{
+        margin-bottom: 84px;
+        .location-item{
+            width: 48%;
+            max-width: none;
+            margin-bottom: 20px;
+            h3{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .location-content{
+                li{
+                    margin-bottom: 9px;
+                }
+                li:last-child{
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            } 
+        }
+    }
+}
+@media (max-width:767px){
+    .location{
+        margin-bottom: 40px;
+        .location-item{
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+
+}
